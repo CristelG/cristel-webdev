@@ -1,0 +1,98 @@
+/* Author: Cristel Ganna */
+
+/* GLOBAL */
+
+html {
+    scroll-behavior: smooth
+}
+
+.btn-pink {
+    background-color: #f6b7bc;
+    font-weight: 300;
+}
+
+/* NAVBAR */
+
+#navBar .nav-link {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#logo {
+    height: 3em;
+}
+
+.navbar-header {
+    width: 15%;
+}
+
+ul.nav.navbar-nav {
+    display: block;
+    float: right;
+    width: 85%;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+    width: 28.33%;
+    text-align: center;
+}
+
+/* HOME */
+
+.jumbotron {
+    background: url("../img/bg.jpg") no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#introText {
+    margin-top: 35vh;
+}
+
+#introText p a {
+    margin-top: 45px;
+}
+
+/* SERVICES */
+
+.servicesIcons {
+    font-size: 4em;
+    margin-bottom: 1.1em;
+    margin-top: 1.1em;
+    color: #f6b7bc;
+}
+
+/* PROJECTS */
+
+#projects {
+    background-color: #f6b7bc
+}
+
+/* CONTACT */
+
+.contactIcons {
+    color: #f6b7bc;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    /* Intro text */
+    #hello {
+        font-size: 2em;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #f6b7bc
+}
