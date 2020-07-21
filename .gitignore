@@ -106,8 +106,5 @@ dist
 #.env
 .env
 
-#node modules
-node_modules/
-
 #php contact
 contact/contact.php
