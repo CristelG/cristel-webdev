@@ -1,24 +1,21 @@
 //Animations
 AOS.init({
-    once: true
-})
+    once: true,
+});
 
 //jQuery
-$("#contact-form").submit(function (e) {
-
+$('#contact-form').submit(function (e) {
     e.preventDefault(); // avoid to execute the actual submit of the form.
 
     var form = $(this);
     var url = form.attr('action');
 
     $.ajax({
-        type: "POST",
-        url: url,
+        type: 'POST',
+        url: '/contact',
         data: form.serialize(), // serializes the form's elements.
         success: function (data) {
-            alert(data); // show response from the php script.
-        }
+            alert('success = ' + data.success); // show response from the php script.
+        },
     });
-
-
 });
