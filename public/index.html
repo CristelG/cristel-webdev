@@ -9,15 +9,6 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-		crossorigin="anonymous"></script>
 	<!-- End Bootstrap -->
 	<!-- Flag Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
@@ -133,14 +124,12 @@
 				faucibus vel ligula. Vivamus vel congue enim, sit amet commodo felis. Phasellus ac nibh
 				nisi.
 			</p>
-			<div class="row mt-5 justify-content-around">
+			<!-- <div class="row mt-5 justify-content-around">
 				<div data-aos="fade-up-right" class="col-sm-3 card text-center mb-3" style="width: 18rem;">
 					<img class="mt-3 card-img-top img-thumbnail" src="/assets/img/svt.png" alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title">Swiss Vape Technology</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
-							the card's
-							content.</p>
+						<h5 class="card-title">SVT</h5>
+						<p class="card-text">E-Commerce solution developed from the open-source solutions OpenCart</p>
 						<a href="https://swissvapetechnology.ch" target="_blank" class="btn btn-pink">Visit website</a>
 					</div>
 				</div>
@@ -148,11 +137,50 @@
 					<img class="mt-3 card-img-top img-thumbnail" src="/assets/img/inveion.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">INVEION</h5>
+						<p class="card-text">Some quick example</p>
+						<a href="https://inveion.ch" class="btn btn-pink">Visit website</a>
+					</div>
+				</div>
+				<div data-aos="fade-up-left" class="col-sm-3 card text-center mb-3" style="width: 18rem;">
+					<img class="mt-3 card-img-top img-thumbnail" src="/assets/img/makeplain.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">MAKE PLAIN</h5>
 						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
 							the card's
 							content.</p>
-						<a href="https://inveion.ch" class="btn btn-pink">Visit website</a>
+						<a href="https://makeplain.ch" class="btn btn-pink">Visit website</a>
 					</div>
+				</div>
+			</div> -->
+			<div class="row">
+				
+				<div data-aos="fade-up-left" class="col-sm-12">
+					<a href="https://makeplain.ch" target="_blank">
+						<div id="makeplain" class="box15 projectImage">
+							<div class="box-content">
+								<h3 class="title display-4">Visit MakePlain.ch</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				<div data-aos="fade-up-right" class="col-sm-12">
+					<a class="text-decoration-none text-white" href="https://inveion.ch" target="_blank">
+						<div id="inveion" class="box15 projectImage">
+							<div class="box-content">
+								<h3 class="title display-4">Visit INVEION.ch</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div data-aos="fade-up-left" class="col-sm-12">
+					<a class="text-decoration-none text-white" href="https://inveion.ch" target="_blank">
+						<div id="svt" class="box15 projectImage">
+							<div class="box-content">
+								<h3 class="title display-4">Visit SwissVapeTechnology.ch</h3>
+							</div>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -221,11 +249,16 @@
 							</div>
 						</div>
 						<!--Grid row-->
-						<button class="btn btn-pink btn-block mt-2" type="submit" value="Submit">Send!</button>
+						<button id="submitBtn" class="btn btn-pink btn-block mt-2" type="submit" value="Submit">
+							<h6 id="sendButtonText" class="text-white">Send</h6>
+							<img id="spinner" src="assets/img/spinner.svg" alt="">
+						</button>
 					</form>
-					<div class="text-center text-sm-left my-3">
-						<!-- <a class="btn btn-pink btn-block" onclick="document.getElementById('contact-form').submit();">Send!</a> -->
-						
+					<div class="text-center text-muted my-3">
+						<small>This site is protected by reCAPTCHA and the Google 
+							<a href="https://policies.google.com/privacy">Privacy Policy</a> and
+							<a href="https://policies.google.com/terms">Terms of Service</a> apply.
+						</small>
 					</div>
 					<div class="status"></div>
 				</div>

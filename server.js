@@ -37,8 +37,8 @@ app.post('/contact', (req, res) => {
             if (googleRes.data.success === true) {
                 // Instantiate the SMTP server
                 const transporter = nodemailer.createTransport({
-                    host: 'smtp.ethereal.email',
-                    port: 587,
+                    host: process.env.SMTP,
+                    port: process.env.SMTP_PORT,
                     auth: {
                         user: process.env.EMAIL_USERNAME,
                         pass: process.env.EMAIL_PASSWORD,
@@ -47,8 +47,8 @@ app.post('/contact', (req, res) => {
 
                 // Specify what the email will look like
                 const mailOpts = {
-                    from: 'Your sender info here', // This is ignored by Gmail
-                    to: 'lura96@ethereal.email',
+                    from: process.env.SERVER_MAIL, // This is ignored by Gmail
+                    to: process.env.EMAIL,
                     subject: `New message from contact form [${req.body.subject}]`,
                     text: `${req.body.name} (${req.body.email}) says: \n\r\n\r ${req.body.message}`,
                 };
@@ -56,16 +56,14 @@ app.post('/contact', (req, res) => {
                 // Attempt to send the email
                 transporter.sendMail(mailOpts, (error, response) => {
                     if (error) {
-                        res.send({
-                            success: false,
-                        }); // Send error
+                        res.status(500).send(
+                            'There was an error with the mail sending.'
+                        ); // Send error
                     } else {
-                        res.send({
-                            success: true,
-                        }); // Send success
+                        res.status(200).send();
                     }
                 });
-            }
+            } else res.status(500).send('There was an error with the google captcha request.');
         })
         .catch((error) => console.log(error));
 });
