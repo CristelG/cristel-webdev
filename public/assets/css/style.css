@@ -60,11 +60,17 @@ ul.nav.navbar-nav {
 }
 
 #introText {
-    margin-top: 35vh;
+    margin-top: 25vh;
 }
 
 #introText p a {
     margin-top: 45px;
+}
+
+.btn-light {
+    color: #212529;
+    background-color: rgba(232, 232, 246, 0.7);
+    border-color: #f8f9fa;
 }
 
 /* SERVICES */
@@ -124,14 +130,14 @@ ul.nav.navbar-nav {
     transition: all 0.2s ease 0.3s;
 }
 .box15 .box-content:before {
-    border-left: 1px solid #FAFAFA;
-    border-top: 1px solid #FAFAFA;
+    border-left: 1px solid #fafafa;
+    border-top: 1px solid #fafafa;
     top: 19px;
     left: 19px;
 }
 .box15 .box-content:after {
-    border-bottom: 1px solid #FAFAFA;
-    border-right: 1px solid #FAFAFA;
+    border-bottom: 1px solid #fafafa;
+    border-right: 1px solid #fafafa;
     bottom: 19px;
     right: 19px;
 }
@@ -142,7 +148,7 @@ ul.nav.navbar-nav {
 }
 .box15 .title {
     font-size: 2em;
-    color: #FAFAFA;
+    color: #fafafa;
     margin: 0;
     position: relative;
     top: 0;
@@ -155,6 +161,7 @@ ul.nav.navbar-nav {
     opacity: 1;
     transition: all 0.5s cubic-bezier(1, -0.53, 0.405, 1.425) 10ms;
 }
+
 /* .box15 .title:after {
     content: '';
     width: 0;
@@ -167,47 +174,10 @@ ul.nav.navbar-nav {
     margin: 0 auto;
     transition: all 1s ease 0s;
 } */
+
 .box15:hover .title:after {
     width: 80%;
     transition: all 1s ease 0.8s;
-}
-.box15 .icon {
-    width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(1, -0.53, 0.405, 1.425);
-    transition-delay: 0.1s;
-}
-.box15:hover .icon {
-    bottom: 39%;
-    opacity: 1;
-}
-.box15 .icon li {
-    display: inline-block;
-}
-.box15 .icon li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: 18px;
-    color: #000;
-    border: 1px solid #000;
-    margin-right: 5px;
-    transition: all 0.3s ease-in-out 0s;
-}
-.box15 .icon li a:hover {
-    background: #000;
-    color: #fff;
-}
-@media only screen and (max-width: 990px) {
-    .box15 {
-        margin-bottom: 30px;
-    }
 }
 
 #makeplain {
@@ -220,6 +190,7 @@ ul.nav.navbar-nav {
 
 #svt {
     background-image: url('../img/svt.png');
+    background-position: 85% 15%;
 }
 
 /* CONTACT */
@@ -238,26 +209,83 @@ ul.nav.navbar-nav {
     visibility: hidden;
 }
 
-/* RESPONSIVE */
-
-@media only screen and (max-width: 600px) {
-    /* Intro text */
-    #hello {
-        font-size: 2em;
-    }
-}
-
 /* FOOTER */
 
 footer {
     background-color: #f6b7bc;
 }
 
-@keyframes ldio-wx4npdrdlp {
-    0% {
+/* GO TO TOP BTN */
+
+#goToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f6b7bc; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border: 1px solid white;
+    width: 3em;
+}
+
+#goToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/************** RESPONSIVE ****************/
+
+/* On screens that are 990px or less */
+@media only screen and (max-width: 990px) {
+    .box15 {
+        margin-bottom: 30px;
+    }
+}
+/* On screens that are 1024px or less aka iPad Pro and down*/
+@media screen and (max-width: 1024px) {
+    .box15 {
         opacity: 1;
     }
-    100% {
-        opacity: 0;
+    .box15 .title {
+        opacity: 1;
+        font-size: 1.5em;
+        top: 40%;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+    .box15 .box-content:after,
+    .box15 .box-content:before {
+        opacity: 1;
+    }
+    .box15 .box-content {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .projectImage {
+        height: 12em;
+    }
+
+    .fixed-mobile-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    #introText {
+        margin-top: 35vh;
+    }
+}
+/* On screens that are 600px or less */
+@media only screen and (max-width: 600px) {
+    /* Intro text */
+    #hello {
+        font-size: 2em;
     }
 }
