@@ -26,34 +26,68 @@
 </head>
 
 <body>
-	<!-- Start Navbar -->
-	<nav id="navbar" class="navbar fixed-mobile-nav navbar-expand-lg navbar-light">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar"
-			aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navBar">
-			<ul class="mx-auto navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#introSection">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#services">Services</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-		</div>
-	</nav>
-	<!-- End Navbar -->
+	<!-- Navbar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#introSection">
+        <strong>CG</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#introSection">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" >Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" >Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons" id="socialsNav">
+          <li class="nav-item px-2">
+            <a href="https://www.linkedin.com/in/cristel-ganna-725951158/" class="nav-link" rel="noreferrer" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/CristelG" class="nav-link border border-light rounded"
+              rel="noreferrer" target="_blank">
+              <i class="fab fa-github mr-2"></i>GitHub
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
 	<!-- Start Content -->
 	<!-- Intro -->
 	<section id="introSection">
 		<div class="jumbotron jumbotron-fluid">
 			<div data-aos-duration="2000" data-aos="fade-up" id="introText">
+				<img src="../assets/img/mexd2.png" alt="Cristel-Photo" id="cristelPhoto" class="rounded-circle border border-white mx-auto">
 				<h1 id="hello" class="display-3 text-center">Hello! I'm Cristel</h1>
 				<p class="text-center">A Full-stack developer based in <span class="flag-icon flag-icon-ch"></span></p>
 				<p class="text-center">
@@ -71,34 +105,19 @@
 				<div class="col-sm-4">
 					<i class="servicesIcons fas fa-paint-brush"></i>
 					<h4 class="mb-4">Design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum dignissim arcu in
-						tempor. Vivamus sed mattis
-						nisl, quis mollis enim. Phasellus condimentum vulputate varius. Aenean libero sapien,
-						pellentesque eget bibendum sed,
-						faucibus vel ligula. Vivamus vel congue enim, sit amet commodo felis. Phasellus ac nibh
-						nisi.
+					<p>Having an engaging and professional website is important part of any business. I will work with you to find out what you need from your website and offer you the best solution specially tailored for your needs.
 					</p>
 				</div>
 				<div class="col-sm-4">
 					<i class="servicesIcons fas fa-code"></i>
 					<h4 class="mb-4">Development</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum dignissim arcu in
-						tempor. Vivamus sed mattis
-						nisl, quis mollis enim. Phasellus condimentum vulputate varius. Aenean libero sapien,
-						pellentesque eget bibendum sed,
-						faucibus vel ligula. Vivamus vel congue enim, sit amet commodo felis. Phasellus ac nibh
-						nisi.
+					<p>Already know what you want your website or app to look like but have no skills to make it come to life? No worries, I will bring forth my development skills to make your vision become true.
 					</p>
 				</div>
 				<div class="col-sm-4">
 					<i class="servicesIcons fas fa-chart-line"></i>
 					<h4 class="mb-4">Consulting</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum dignissim arcu in
-						tempor. Vivamus sed mattis
-						nisl, quis mollis enim. Phasellus condimentum vulputate varius. Aenean libero sapien,
-						pellentesque eget bibendum sed,
-						faucibus vel ligula. Vivamus vel congue enim, sit amet commodo felis. Phasellus ac nibh
-						nisi.
+					<p>My expertise in the field allows me to find your business' needs and match them with your expectations, consulting your company in to a winning strategy to achieve your goals.
 					</p>
 				</div>
 			</div>
@@ -108,50 +127,21 @@
 	<!-- Projects -->
 	<section data-aos="fade-up" id="projects">
 		<div class="container pb-5">
-			<h1 class="pt-5 display-4 text-center">Projects</h1>
-			<p class="pt-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum
-				dignissim arcu in
-				tempor. Vivamus sed mattis
-				nisl, quis mollis enim. Phasellus condimentum vulputate varius. Aenean libero sapien,
-				pellentesque eget bibendum sed,
-				faucibus vel ligula. Vivamus vel congue enim, sit amet commodo felis. Phasellus ac nibh
-				nisi.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum dignissim arcu in
-				tempor. Vivamus sed mattis
-				nisl, quis mollis enim. Phasellus condimentum vulputate varius. Aenean libero sapien,
-				pellentesque eget bibendum sed,
-				faucibus vel ligula. Vivamus vel congue enim, sit amet commodo felis. Phasellus ac nibh
-				nisi.
-			</p>
-			<!-- <div class="row mt-5 justify-content-around">
-				<div data-aos="fade-up-right" class="col-sm-3 card text-center mb-3" style="width: 18rem;">
-					<img class="mt-3 card-img-top img-thumbnail" src="/assets/img/svt.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">SVT</h5>
-						<p class="card-text">E-Commerce solution developed from the open-source solutions OpenCart</p>
-						<a href="https://swissvapetechnology.ch" target="_blank" class="btn btn-pink">Visit website</a>
-					</div>
-				</div>
-				<div data-aos="fade-up-left" class="col-sm-3 card text-center mb-3" style="width: 18rem;">
-					<img class="mt-3 card-img-top img-thumbnail" src="/assets/img/inveion.png" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">INVEION</h5>
-						<p class="card-text">Some quick example</p>
-						<a href="https://inveion.ch" class="btn btn-pink">Visit website</a>
-					</div>
-				</div>
-				<div data-aos="fade-up-left" class="col-sm-3 card text-center mb-3" style="width: 18rem;">
-					<img class="mt-3 card-img-top img-thumbnail" src="/assets/img/makeplain.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">MAKE PLAIN</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
-							the card's
-							content.</p>
-						<a href="https://makeplain.ch" class="btn btn-pink">Visit website</a>
-					</div>
-				</div>
-			</div> -->
+			<h1 class="pt-5 display-4 text-center pb-5">Projects</h1>
+			<!-- <p class="pt-5 text-center">
+				Here are some of the projects I did
+			</p> -->
 			<div class="row">
+
+				<div data-aos="fade-up-left" class="col-sm-12">
+					<a href="https://avirex.eu" rel="noreferrer" target="_blank">
+						<div id="avirex" class="box15 projectImage">
+							<div class="box-content">
+								<h3 class="title display-4">Visit Avirex.EU</h3>
+							</div>
+						</div>
+					</a>
+				</div>
 				
 				<div data-aos="fade-up-left" class="col-sm-12">
 					<a href="https://makeplain.ch" rel="noreferrer" target="_blank">
@@ -173,6 +163,15 @@
 					</a>
 				</div>
 				<div data-aos="fade-up-left" class="col-sm-12">
+					<a class="text-decoration-none text-white" href="https://fideconto.apton.ch" rel="noreferrer" target="_blank">
+						<div id="fideconto" class="box15 projectImage">
+							<div class="box-content">
+								<h3 class="title display-4">Visit Fideconto.ch</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div data-aos="fade-up-right" class="col-sm-12">
 					<a class="text-decoration-none text-white" href="https://swissvapetechnology.ch" rel="noreferrer" target="_blank">
 						<div id="svt" class="box15 projectImage">
 							<div class="box-content">
@@ -189,14 +188,6 @@
 	<section data-aos="fade-up" class="mb-5" id="contact">
 		<div class="container">
 			<h1 class="pt-5 display-4 text-center">Contact me!</h1>
-			<p class="pt-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum
-				dignissim arcu in
-				tempor. Vivamus sed mattis
-				nisl, quis mollis enim. Phasellus condimentum vulputate varius. Aenean libero sapien,
-				pellentesque eget bibendum sed,
-				faucibus vel ligula. Vivamus vel congue enim, sit amet commodo felis. Phasellus ac nibh
-				nisi.
-			</p>
 			<div class="row justify-content-center">
 
 				<!--Grid column-->
@@ -267,7 +258,7 @@
 				<div class="col-md-4 text-center mt-5 mb-5">
 					<ul class="list-unstyled mb-0">
 						<li><i class="contactIcons fas fa-map-marker-alt fa-2x"></i>
-							<p>Ticino, Switzerland</p>
+							<p>Lugano, Ticino, Switzerland</p>
 						</li>
 						<li><i class="contactIcons fas fa-phone mt-4 fa-2x"></i>
 							<p>+41 76 450 31 79</p>
@@ -308,13 +299,15 @@
 		<hr>
 		<!-- Footer Elements -->
 		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© 2020<a class="text-reset text-decoration-none" href="#"> cristel.cc</a>
+		<div class="footer-copyright text-center py-3">© 2022<a class="text-reset text-decoration-none"> cristel.cc</a>
 		</div>
 		<!-- Copyright -->
 
 	</footer>
 	<!-- End Footer -->
 	<!-- End Content -->
+	
+	<!-- Go to top button -->
 	<button onclick="topFunction()" id="goToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 </body>
 <!-- Bootstrap -->

@@ -25,7 +25,11 @@ html {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(56, 54, 54, 0.432);
+}
+
+.top-nav-collapse {
+    background-color: #1c2331;
 }
 
 #logo {
@@ -49,7 +53,21 @@ ul.nav.navbar-nav {
     text-align: center;
 }
 
+@media only screen and (max-width: 1000px) {
+    #socialsNav {
+        flex-direction: row-reverse;
+    }
+}
+
+#socialsNav li:nth-child(2) a {
+    padding: 5px;
+}
 /* HOME */
+
+#cristelPhoto {
+    height: 90px;
+    display: flex;
+}
 
 .jumbotron {
     background: url('../img/bg.jpg') no-repeat;
@@ -191,6 +209,16 @@ ul.nav.navbar-nav {
 #svt {
     background-image: url('../img/svt.png');
     background-position: 85% 15%;
+}
+
+#fideconto {
+    background-image: url('../img/fideconto.jpg');
+    background-position: 100% 0%;
+}
+
+#avirex {
+    background-image: url('../img/avirex.jpg');
+    background-position: 100% 0%;
 }
 
 /* CONTACT */
